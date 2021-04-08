@@ -1,0 +1,78 @@
+<!-- 07-04-2021 - 10118332 - Nais Farid - IF8 !-->
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="216dp"
+            android:layout_height="319dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/travelove" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_margin="25dp">
+
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#DD706E6E"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:hint="Username"
+            />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#DD706E6E"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/black"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/main"
+            android:textColor="#ffff"
+            android:text="Login"
+            />
+
+        <Button
+            android:id="@+id/btn_regist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/accent"
+            android:textColor="#ffff"
+            android:text="Daftar"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
